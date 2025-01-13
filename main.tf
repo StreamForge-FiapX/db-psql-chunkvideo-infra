@@ -23,7 +23,7 @@ resource "aws_db_instance" "postgres" {
   engine               = "postgres"
   engine_version       = "15.10"
   instance_class       = "db.t3.micro"
-  db_name              = "chunkvideo-db"
+  db_name              = "chunkvideodb"
   identifier           = "psql-chunkvideo-db"
   username             = "dbadminuser"
   password             = random_password.rds_password.result
