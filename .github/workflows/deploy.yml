@@ -39,7 +39,7 @@ jobs:
 
       - name: Save Plan
         if: ${{ env.DESTROY == 'false' }}
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: tfplan
           path: tfplan
